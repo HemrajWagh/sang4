@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/back_cell_header"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="7dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:id="@+id/row_cell_header_text"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        />
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Version"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:text="Add new project"
+        android:textColor="#ffffff"
+        android:textSize="19dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/addnewprojectText"
+        android:visibility="gone"
+        />
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+        <ImageView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/add"
+            android:id="@+id/header_add"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+        <ImageView 
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/pen1"
+            android:id="@+id/header_editpen"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+        <Button android:layout_width="75dp"
+        android:layout_height="fill_parent"
+        android:text="Edit"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/back_blue_button"
+        android:id="@+id/row_cell_header_editbtn"
+        android:onClick="EditItemClick"
+        android:layout_marginRight="15dp"
+        android:visibility="visible"/>
+    </RelativeLayout>
+    
+    <Button 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/refresh"
+            android:onClick="RefreshClick"
+            android:id="@+id/row_cell_header_refresh"/>
+    
+    
+</LinearLayout>

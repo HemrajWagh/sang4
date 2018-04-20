@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/row_cell_addDefect_bg">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:id="@+id/row_cell_add_updateinspection"
+        android:text=""
+        android:textSize="20dp"
+        />
+    <!-- <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="7dp"
+        android:text=""
+        android:textColor="#7D92A4"
+        android:layout_weight="1"
+        
+        android:id="@+id/row_cell_addDefect_text"
+        
+        />
+    
+    <ImageView 
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_marginRight="2dp"
+        android:id="@+id/row_cell_image"
+        android:src="@drawable/right_arrow"
+        /> --> 
+        <CheckBox 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/check_box"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/trans"
+            android:onClick="CheckBoxButtonClick"
+            android:id="@+id/checkbox_btn"
+            />
+    
+</RelativeLayout>

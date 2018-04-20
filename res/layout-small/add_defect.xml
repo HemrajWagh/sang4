@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >"
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:gravity="center">
+        <include 
+			  	
+				android:id="@+id/included_bar"
+				layout="@layout/top_bar_menu"
+				
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				/>
+         
+        </LinearLayout>
+      
+	<!-- <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="44dp"
+	    android:background="@drawable/back_top"
+	    
+	    
+	    >
+	    
+	    
+	</LinearLayout>-->
+	<LinearLayout 
+	    android:layout_weight="1"
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:background="#c5d0d2" 
+	    android:orientation="vertical">
+	    <ListView  
+    android:layout_width="fill_parent" 
+    
+    android:layout_height="fill_parent" 
+    
+    android:fadingEdge="none" 
+    android:id="@+id/android:add_defect_list"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="7dp"
+    android:scrollingCache="false"
+    
+    >
+	        
+	    </ListView>
+	    
+	   <!--  <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="7dp"
+    		android:layout_marginBottom="7dp"
+    		android:layout_marginRight="7dp"
+    		android:layout_marginTop="1dp"
+	       >
+	        <include 
+			  	
+				android:id="@+id/included_photo"
+				layout="@layout/row_cell_add_defect_photo"
+				
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				/>
+	    </LinearLayout> -->
+	    
+	</LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/back_bottom"
+        android:orientation="horizontal">
+        <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent">
+	        <!-- <Button 
+	            android:layout_width="68dp"
+	            android:layout_height="36dp"
+	            android:layout_marginTop="4dp"
+	            android:background="@drawable/back_blue_button"
+	            android:onClick="BackClick"
+	            android:text="Back"
+	            android:textStyle="bold"
+	            android:textColor="#ffffff"
+	            android:textSize="15dp"
+	            android:layout_marginLeft="5dp"
+	            android:visibility="invisible"
+	            />
+	        <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="Snag Reporter"
+	        android:textSize="15dp"
+	        android:textColor="#ffffff"
+	        android:layout_centerInParent="true"/> -->
+	        
+	        <Button 
+	            android:layout_width="68dp"
+	            android:layout_height="36dp"
+	            android:layout_marginTop="4dp"
+	            android:background="@drawable/back_blue_button"
+	            android:onClick="SaveClick"
+	            android:text="Save"
+	            android:textStyle="bold"
+	            android:textColor="#ffffff"
+	            android:textSize="15dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_alignParentRight="true"
+	            android:id="@+id/adddefectSavebtn"
+	            />
+	    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

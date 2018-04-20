@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <RelativeLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:background="#424242">
+            <Button android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Cancel"
+                android:id="@+id/upload_photo_btncncl"/>
+            <Button android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_alignParentRight="true"
+                android:text="Update"
+                android:id="@+id/upload_photo_btnupdate"/>
+          
+        </RelativeLayout>
+        
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="30dp">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="EDIT DEFFECT"
+            android:background="#336699"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"/>
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Room Location"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+         <Button  android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Bedroom"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/trans"
+            android:textColor="#336699"
+            android:gravity="left"
+            android:paddingTop="8dp"/>
+       
+        
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Item damaged"
+             android:textColor="#000000"
+            android:textStyle="bold"/>
+         <Button  android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Basin"
+            android:layout_marginLeft="20dp"
+             android:background="@drawable/trans"
+            android:textColor="#336699"
+            android:gravity="left"
+            android:paddingTop="8dp"/>
+       
+        
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Damaged Type"
+             android:textColor="#000000"
+            android:textStyle="bold"/>
+         <Button  android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Wrong Colour"
+            android:layout_marginLeft="20dp"
+             android:background="@drawable/trans"
+            android:textColor="#336699"
+            android:gravity="left"
+            android:paddingTop="8dp"/>
+       
+        
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Size Of Damage"
+             android:textColor="#000000"
+            android:textStyle="bold"/>
+         <Button  android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Small"
+            android:layout_marginLeft="20dp"
+             android:background="@drawable/trans"
+            android:textColor="#336699"
+            android:gravity="left"
+            android:paddingTop="8dp"/>
+       
+        
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Surface Type"
+             android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/trans"
+            android:text="Ceramic"
+            android:textColor="#336699" 
+            android:gravity="left"
+            android:paddingTop="8dp"/>
+        
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Photos"
+             android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingTop="18dp"
+            />
+        
+       <ImageView android:layout_height="55dp"
+             android:layout_width="55dp"
+             android:id="@+id/upload_photo_imgvw1"
+             android:layout_marginLeft="10dp"
+             android:onClick="btnUpLoadImage1"
+             android:background="#dbdbdb"
+             ></ImageView>
+        <ImageView android:layout_height="55dp"
+             android:layout_width="55dp"
+             android:id="@+id/upload_photo_imgvw2"
+             android:layout_marginLeft="20dp"
+           
+           
+             android:onClick="btnUpLoadImage2"
+             android:background="#dbdbdb"
+             ></ImageView>
+       <ImageView android:layout_height="55dp"
+             android:layout_width="55dp"
+             android:id="@+id/upload_photo_imgvw3"
+             android:layout_marginLeft="20dp"
+             android:onClick="btnUpLoadImage3"
+             android:background="#dbdbdb"></ImageView>
+       
+        
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+             android:textColor="#000000"
+            android:textStyle="bold"/>
+         <EditText  android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/trans"/>
+       
+        
+    </LinearLayout>
+    <LinearLayout android:layout_height="44dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:background="#424242">
+        <Button android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:text="Sang reporter"
+             android:textSize="11dp"
+             android:background="#999999"
+             android:textColor="#FFFFFF"/>
+        <Button android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:text="Contact Us"
+            android:textSize="11dp"
+              android:background="#999999"
+              android:textColor="#FFFFFF"/>
+        <Button android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:text="Account Profile"
+             android:textSize="11dp"
+               android:background="#999999"
+               android:textColor="#FFFFFF"/>
+        <Button android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:text="More..."
+            android:textSize="11dp"
+              android:background="#999999"
+              android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

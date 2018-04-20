@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PhotoPaintActivity!</string>
+    <string name="app_name">SnagginPro</string>
+	  <string name="WS_URLLocal">http://20.10.1.44:4442/</string>
+	<string name="WS_URL">http://5.1.113.117:1105/</string>
+	<string name="GoOffline">Go Offline</string>
+	<string name="GoOnline">Go Online</string>
+	<string name="Version">v 1.13.0417</string>
+	<string name="sort">Sort &amp; Filter</string>
+	<string name="main_empty_list">There is no recent conversation, write new message
+		to start one.</string>
+	<string name="strInspector">Inspector</string>
+	<string name="strContractor">Contractor</string>
+	<string name="foldername">SnagReporter/Pictures/</string>
+	<string name="aboutAppTtle">About SnagginPro</string>
+	<string name="projectTxt"></string>
+	 <string name="strProjDescrpt"></string>
+	<string name="menu_Legends">Legends</string>
+	<string name="menu_about">About</string>
+	
+	<string name="strInspIcDesc">Task Inspection Started</string>
+	<string name="strSngIcDesc">Pending Snags in Task</string>
+	<string name="strResvSngIcDesc">Resolved Snag</string>
+	<string name="strPendSngIcDesc">Pending Snag </string>
+	<string name="strReInspngIcDesc">Reinspected &amp; Unresolved Snag</string>
+	<string name="strEntryInsIcDesc">New Task</string>
+	<string name="strEntryModIcDesc">Modified Task</string>
+	<string name="strInsCountIcDesc">Count of new updates</string>
+	<string name="strModCountIcDesc">Count of modified updates</string>
+	<string name="strMnuIcNm">Legends</string>
+	<string name="strIconDesTitle">Legends</string>
+</resources>

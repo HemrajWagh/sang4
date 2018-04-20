@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_cell"
+    android:orientation="horizontal"
+    >
+    <ImageView 
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        
+        android:id="@+id/grid_cell_image"
+        android:src="@drawable/noimage"
+        />
+    <TextView 
+        android:layout_height="match_parent"
+        android:layout_width="80dp"
+        android:text=""
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:paddingLeft="2dp"
+        android:gravity="left|center"
+        android:id="@+id/grid_cell_text"
+        
+        />
+     <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+         <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:gravity="right"
+                android:text=""
+                android:singleLine="true"
+                android:id="@+id/grdlst_txtSngCnt"/>
+            <ImageView android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/wrnng"
+            android:id="@+id/grdlst_imgSngCnt"/>
+             <ImageView android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/inspct"
+            android:id="@+id/grdlst_imgInspStrtd"/>
+        </LinearLayout>
+        </RelativeLayout>
+    
+    
+</LinearLayout>

@@ -1,0 +1,158 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snagreporter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        />
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.CAMERA" />
+ <uses-feature android:name="android.hardware.camera" />
+ <uses-feature android:name="android.hardware.camera.autofocus" />
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+    
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+    
+    <uses-permission
+        android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+    
+    <uses-permission
+        android:name="android.permission.READ_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:icon="@drawable/snagreporter"
+        android:label="@string/app_name"
+        android:debuggable="true"
+        
+       android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><!--  -->
+        <activity android:name="com.snagreporter.StartPage"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.snagreporter.PhotoView"
+            
+            ></activity>
+        
+        
+        <activity android:name="com.snagreporter.BuildingListPage"
+            android:configChanges="orientation|keyboardHidden"
+           ></activity>
+        <activity android:name="com.snagreporter.ProjectListPage"
+            android:configChanges="orientation|keyboardHidden"
+            
+            ></activity>
+        <activity android:name="com.snagreporter.FloorListPage"
+            android:configChanges="orientation|keyboardHidden"
+           ></activity>
+        <activity android:name="com.snagreporter.ApartmentListPage"
+            android:configChanges="orientation|keyboardHidden"
+           ></activity>
+        <activity android:name="com.snagreporter.DefectListPage"
+            android:configChanges="orientation|keyboardHidden"
+           ></activity>
+        <activity android:name="com.snagreporter.AddDefect"
+            android:configChanges="keyboardHidden|orientation"
+       ></activity>
+       <activity android:name="com.snagreporter.ContractorDefectList"
+       ></activity>
+       <activity android:name="com.snagreporter.ListItemNames"
+       ></activity>
+       <activity android:name="com.snagreporter.AddUpdateInspectionList"
+       ></activity>
+       <activity android:name="com.snagreporter.AddDependency"
+       ></activity>
+        <activity android:name="com.snagreporter.CheckListDescription"
+       ></activity>
+        <activity android:name="com.snagreporter.AddSnagCheckList"
+       ></activity>
+        <activity android:name="com.snagreporter.EditDefect"
+           android:configChanges="keyboardHidden|orientation"></activity>
+            <activity android:name="com.snagreporter.MainPage"
+                android:configChanges="orientation|keyboardHidden"
+               ></activity>
+            <activity android:name="com.snagreporter.ViewImagePage"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>
+            <activity android:name="com.snagreporter.Registration_page"
+                android:configChanges="orientation|keyboardHidden"
+               ></activity>
+                <activity android:name="com.snagreporter.EditDefectChageStatus"
+                    android:configChanges="orientation|keyboardHidden"
+              ></activity>
+                <activity android:name="com.snagreporter.EditDefectChageContractorStatus"
+              ></activity>
+                <activity android:name="com.snagreporter.Login_page"
+                android:configChanges="orientation|keyboardHidden"
+               ></activity>
+                 <activity android:name="com.snagreporter.AddNewBuilding"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>
+                  <activity android:name="com.snagreporter.AddNewProject"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>
+                   <activity android:name="com.snagreporter.AddNewFloor"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>
+                    <activity android:name="com.snagreporter.AddNewApartment"
+                android:configChanges="orientation|keyboardHidden"
+               ></activity>
+                  <activity android:name="com.snagreporter.EditFloor"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>
+                  <activity android:name="com.snagreporter.EditProject"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>
+                  <activity android:name="com.snagreporter.EditApartment"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>
+                  <activity android:name="com.snagreporter.EditBuilding"
+                android:configChanges="orientation|keyboardHidden"
+               ></activity>  
+                <activity android:name="com.snagreporter.GraphWebView"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>    
+                
+                  <activity android:name="org.achartengine.GraphicalActivity" 
+                      />  
+                      <activity android:name="com.snagreporter.BarChartActivity"
+                android:configChanges="orientation|keyboardHidden"
+                ></activity>     
+                <activity android:name="com.snagreporter.SelectReportPage"
+       ></activity>    
+       <activity android:name="com.snagreporter.ReportTable"
+       ></activity>  
+       <activity android:name="com.snagreporter.fileexplorer.FileExplorerActivity"
+       ></activity> 
+       <activity android:name="com.snagreporter.chat.MessageActivity"
+       ></activity>  
+       <activity android:name="com.snagreporter.Attendance"
+       ></activity>    
+        <activity android:name="com.snagreporter.imagemap.ImageMapActivity"
+       ></activity> 
+        <activity android:name="com.snagreporter.SnagImageMapping"
+       ></activity> 
+        <activity android:name="com.snagreporter.IconDesc"
+       ></activity>
+         <activity android:name="com.snagreporter.AboutProject"
+       ></activity>
+    </application>
+    
+
+</manifest>

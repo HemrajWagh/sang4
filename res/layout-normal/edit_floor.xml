@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+      <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:gravity="center">
+        <include 
+			  	
+				android:id="@+id/included_bar"
+				layout="@layout/top_bar_menu"
+				
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				/>
+         
+        </LinearLayout>
+<!--  	 <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="44dp"
+	    android:background="@drawable/back_top"
+	    android:gravity="center"
+	    
+	    >
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="Edit Floor"
+	        android:textSize="15dp"
+	        android:textColor="#ffffff"/>
+	</LinearLayout> -->
+	<LinearLayout 
+	    android:layout_weight="1"
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:background="#c5d0d2" 
+	    android:orientation="horizontal"
+	    
+	    android:weightSum="1">
+	    <LinearLayout 
+	    android:layout_weight="0.4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp"
+	    >
+	    
+	        <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Builder Name :"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Project Name :"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Building Name :"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Floor Name :"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           
+	         <!--     <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="No. Of Apartments:"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           
+	          <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Project Name :"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Building Name:"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           
+	           -->
+	           
+	           
+	           
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Image :"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>
+	           
+	        <!--     <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Project :"
+	               android:textColor="#000000"
+	               android:gravity="right"
+	               android:paddingTop="5dp"/>-->
+	            <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               
+	           </LinearLayout>
+	        
+	           
+	            
+	        
+	    
+	     </LinearLayout>
+	     <LinearLayout 
+	    android:layout_weight="0.6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:layout_marginTop="20dp"
+	    >
+	            <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <EditText 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/editPrj_blrname"
+	               android:textSize="12dp"
+	               android:textColor="#dbdbdb"
+	               android:editable="false"
+	               android:focusable="false"
+	               />
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"
+	                   android:visibility="invisible"/>
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <EditText 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/editPrj_prjname"
+	               android:textSize="12dp"
+	               android:textColor="#dbdbdb"
+	               android:editable="false"
+	               android:focusable="false"
+	               />
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"
+	                   android:visibility="invisible"/>
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <EditText 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/editBldng_blgngname"
+	               android:textSize="12dp"
+	               android:textColor="#dbdbdb"
+	               android:editable="false"
+	               android:focusable="false"
+	               />
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"
+	                   android:visibility="invisible"/>
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <EditText 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/editFloor_flrname"
+	               android:textSize="12dp"
+	               />
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"/>
+	           </LinearLayout>
+	           
+	         <!--   <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <EditText 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/addFloor_noOfApts"
+	               android:textSize="12dp"
+	               android:inputType="number"
+	               />
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"/>
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <TextView 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/addFloor_prjname"
+	               android:textSize="12dp"
+	               android:onClick="ChooseProjectClick"
+	               />
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"/>
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <TextView 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/addFloor_bldngname"
+	               android:textSize="12dp"
+	               android:onClick="ChooseBuildingClick"
+	               />
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"
+	                   android:visibility="invisible"/>
+	           </LinearLayout>
+	          
+	          -->
+	           
+	             <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               
+	               <ImageView android:layout_width="40dp"
+	                   android:layout_height="40dp"
+	                   android:id="@+id/editFloor_imgAdd"
+	                   android:background="@drawable/image_add"
+	                   android:onClick="OnImageClick"
+	                   android:layout_marginLeft="2dp"
+	                   />
+	           </LinearLayout>
+	       <!--     <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               <RelativeLayout 
+	                   android:layout_width="190dp"
+	                   android:layout_height="40dp">
+	                   <EditText 
+	               android:layout_width="190dp"
+	               android:layout_height="40dp"
+	               android:id="@+id/reg_project"
+	               android:editable="false"
+	               
+	               android:hint="Select Project"
+	               android:textSize="12dp"
+	               />
+	                   <Button 
+	                       android:layout_width="190dp"
+	                       android:layout_height="40dp"
+	                       android:background="@color/transparent"
+	                       android:onClick="project_Click"/>
+	               </RelativeLayout>
+	               
+	               <TextView 
+	                   android:layout_height="40dp"
+	                   android:layout_width="10dp"
+	                   android:textColor="#ff0000"
+	                   android:text="*"
+	                   android:visibility="invisible"/>
+	           </LinearLayout>   -->
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               android:layout_marginTop="3dp"
+	               >
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Submit"
+	               android:onClick="SubmitClick"
+	               />
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Cancel"
+	               android:onClick="CancelClick"
+	               />
+	               
+	           </LinearLayout>
+	           
+	           
+	           
+	     </LinearLayout>
+	    
+	    
+	    
+	    
+	
+	
+	    
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/back_bottom"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

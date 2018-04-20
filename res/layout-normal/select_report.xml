@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+     android:background="#c5d0d2"
+    >
+	 <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="44dp"
+	    android:background="@drawable/back_top"
+	    android:gravity="center"
+	    
+	    >
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="Select Report"
+	        android:textSize="15dp"
+	        android:textColor="#ffffff"/>
+	</LinearLayout>
+	<ScrollView android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:layout_weight="1">
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="1"
+	    
+	    	android:paddingLeft="4dp"
+	    	android:paddingRight="4dp"
+	    >
+	    
+	    <LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:onClick="projectNameClick"
+    >
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:text="ProjectName"
+        />
+     <Button 
+	               android:layout_height="match_parent"
+	               android:layout_width="fill_parent"
+	               android:id="@+id/select_report_prjname"
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               android:onClick="projectNameClick"
+	               android:textColor="#000000"
+	               android:layout_weight="1"
+	               />
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/right_arrow"
+        />
+    
+</LinearLayout>
+<LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:onClick="buildingNameClick"
+    android:layout_marginTop="1dp"
+    >
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:text="BuildingName"
+        />
+     <Button 
+	               android:layout_height="match_parent"
+	               android:layout_width="fill_parent"
+	              android:id="@+id/select_report_buildingname"
+					 android:onClick="buildingNameClick"
+
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	                android:layout_weight="1"
+	               android:textColor="#000000"
+	               />
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/right_arrow"
+        />
+    
+</LinearLayout>
+<LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:onClick="snagTypeClick"
+    android:layout_marginTop="1dp"
+    >
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:text="SnagType"
+        />
+     <Button 
+	               	android:layout_height="match_parent"
+	              	 android:layout_width="fill_parent"
+	             	android:id="@+id/select_report_snagtype"
+  					android:onClick="snagTypeClick"
+ 						android:layout_weight="1"
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               
+	               android:textColor="#000000"
+	               />
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/right_arrow"
+        />
+    
+</LinearLayout>
+<LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:onClick="snagStatusClick"
+    android:layout_marginTop="1dp"
+    android:gravity="center">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:text="SnagStatus"
+        />
+     <Button 
+	               	android:layout_height="match_parent"
+	              	 android:layout_width="fill_parent"
+	             	 android:id="@+id/select_report_snagStatus"
+ 					android:onClick="snagStatusClick"
+					 android:layout_weight="1"
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               
+	               android:textColor="#000000"
+	               />
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/right_arrow"
+        />
+    
+</LinearLayout>
+<LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:layout_marginTop="1dp"
+    android:gravity="center">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:text="Allocated To Me"
+        />
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1">
+     <CheckBox  
+         				android:layout_marginTop="2dp"
+	               	android:layout_height="wrap_content"
+	              	 android:layout_width="wrap_content"
+	             	 android:id="@+id/select_report_allocByme"
+ 					android:onClick="onCheckClick"
+					 android:layout_centerInParent="true"
+					 
+	              />
+     </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/right_arrow"
+        />
+    
+</LinearLayout>
+<LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:layout_marginTop="1dp"
+    android:gravity="center">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:text="Inspected By Me"
+        />
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1">
+     <CheckBox  
+         			android:layout_marginTop="2dp"
+	               	android:layout_height="wrap_content"
+	              	 android:layout_width="wrap_content"
+	             	 android:id="@+id/select_report_chckdByme"
+ 					android:onClick="onCheckClick"
+					 android:layout_centerInParent="true"
+					 
+	              />
+     </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/right_arrow"
+        />
+    
+</LinearLayout>
+<!-- <LinearLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/back_cell_defect"
+    android:orientation="horizontal"
+    android:onClick="selectInspectorClick"
+    android:layout_marginTop="1dp"
+    android:gravity="center">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:text="Inspector"
+        />
+     <Button 
+	               	android:layout_height="match_parent"
+	              	 android:layout_width="fill_parent"
+	             	 android:id="@+id/select_report_inspctr"
+ 					android:onClick="selectInspectorClick"
+					 android:layout_weight="1"
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               
+	               android:textColor="#000000"
+	               />
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/right_arrow"
+        />
+    
+</LinearLayout>-->
+ <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               android:layout_marginTop="3dp"
+	               android:gravity="center"
+	               >
+	                 <RelativeLayout android:layout_width="190dp"
+	                     android:layout_height="40dp" >
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Submit"
+	               android:onClick="SubmitClick"
+	               android:layout_alignParentLeft="true"
+	               />
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Cancel"
+	               android:onClick="CancelClick"
+	               android:layout_alignParentRight="true"
+	               />
+	               </RelativeLayout>
+	           </LinearLayout>
+<!--  	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="#FFFFFF"
+	    android:layout_marginTop="1dp"
+	  
+	    >
+	     <TextView android:layout_height="40dp"
+	               android:layout_width="100dp"
+	               android:text="ProjectName "
+	               android:textColor="#000000"
+	               
+	               android:textStyle="bold"
+	               android:gravity="center"
+	               android:onClick="projectNameClick"
+	               android:paddingTop="5dp"/>
+	     
+	        
+	     <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="fill_parent">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/select_report_prjname"
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               android:onClick="projectNameClick"
+	               android:textColor="#000000"
+	               />
+	                 <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	               		 android:onClick="projectNameClick"
+	         			android:layout_alignParentRight="true"
+	                   android:background="@drawable/arrowleft"
+	                  />
+	               
+	              </RelativeLayout>
+	            
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="#FFFFFF"
+	    android:layout_marginTop="2dp"
+	    >
+	     <TextView android:layout_height="40dp"
+	               android:layout_width="100dp"
+	               android:text="BuildingName "
+	               android:textColor="#000000"
+	               android:gravity="center"
+	               android:textStyle="bold"
+	               android:paddingLeft="4dp"
+	               android:onClick="projectNameClick"
+	               android:paddingTop="8dp"/>
+	     
+	        
+	     <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="fill_parent">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	              android:id="@+id/select_report_buildingname"
+ 					android:onClick="buildingNameClick"
+ 
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	              
+	               android:textColor="#000000"
+	               />
+	               <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	               		android:onClick="buildingNameClick"
+	         			android:layout_alignParentRight="true"
+	                   android:background="@drawable/arrowleft"
+	                  />
+	              </RelativeLayout>
+	              
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="#FFFFFF"
+	      android:layout_marginTop="2dp"
+	    >
+	     <TextView android:layout_height="40dp"
+	               android:layout_width="100dp"
+	               android:text="SnagType        "
+	               android:textColor="#000000"
+	               android:gravity="center"
+	               android:textStyle="bold"
+	               android:onClick="projectNameClick"
+	               android:paddingTop="5dp"/>
+	     
+	        
+	     <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="fill_parent">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	                android:id="@+id/select_report_snagtype"
+  					android:onClick="snagTypeClick"
+
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	              
+	               android:textColor="#000000"
+	               />
+	               <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	               		android:onClick="snagTypeClick"
+	         			android:layout_alignParentRight="true"
+	                   android:background="@drawable/arrowleft"
+	                  />
+	               
+	              </RelativeLayout>
+	              
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="#FFFFFF"
+	      android:layout_marginTop="2dp"
+	    >
+	     <TextView android:layout_height="40dp"
+	               android:layout_width="100dp"
+	               android:text="SnagStatus    "
+	               android:textColor="#000000"
+	               android:gravity="center"
+	               android:onClick="projectNameClick"
+	               android:textStyle="bold"
+	               android:paddingTop="5dp"/>
+	     
+	        
+	     <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="fill_parent">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/select_report_snagStatus"
+					 android:onClick="snagStatusClick"
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	              
+	               android:textColor="#000000"
+	               />
+	               <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	               		 android:onClick="snagStatusClick"
+	         			android:layout_alignParentRight="true"
+	                   android:background="@drawable/arrowleft"
+	                  />
+	              </RelativeLayout>
+	              
+	</LinearLayout> 
+	
+	 <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               android:layout_marginTop="3dp"
+	               android:gravity="center"
+	               >
+	                 <RelativeLayout android:layout_width="190dp"
+	                     android:layout_height="40dp" >
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Submit"
+	               android:onClick="SubmitClick"
+	               android:layout_alignParentLeft="true"
+	               />
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Cancel"
+	               android:onClick="CancelClick"
+	               android:layout_alignParentRight="true"
+	               />
+	               </RelativeLayout>
+	           </LinearLayout> -->
+	           </LinearLayout>
+	           </ScrollView>
+	            <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/back_bottom"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+    </LinearLayout>
+	</LinearLayout>
+	 <!--  
+	<LinearLayout 
+	    android:layout_weight="1"
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:background="#c5d0d2" 
+	    android:orientation="horizontal"
+	    
+	    android:weightSum="1">
+	    <LinearLayout 
+	    android:layout_weight="0.4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:paddingLeft="5dp"
+	    >
+	    
+	    
+	       <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="ProjectName "
+	               android:textColor="#000000"
+	               android:gravity="left"
+	                 android:background="#FFFFFF"
+	                  android:onClick="projectNameClick"
+	               android:paddingTop="5dp"/>
+	        
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="BuildingName"
+	               android:textColor="#000000"
+	               android:gravity="left"
+	                 android:background="#FFFFFF"
+	               android:paddingTop="5dp"
+	                android:onClick="buildingNameClick"
+	               android:layout_marginTop="1dp"/>
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="SnagType "
+	               android:textColor="#000000"
+	               android:gravity="left"
+	                 android:background="#FFFFFF"
+	                 android:layout_marginTop="1dp"
+	                 android:onClick="snagTypeClick"
+	               android:paddingTop="5dp"/>
+	           <TextView android:layout_height="40dp"
+	               android:layout_width="fill_parent"
+	               android:text="Snag Status"
+	               android:textColor="#000000"
+	               android:gravity="left"
+	                 android:background="#FFFFFF"
+	                 android:layout_marginTop="1dp"
+	                  android:onClick="snagStatusClick"
+	               android:paddingTop="5dp"/>
+	      
+	            <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               >
+	               
+	           </LinearLayout>
+	        
+	           
+	            
+	        
+	    
+	     </LinearLayout>
+	     <LinearLayout 
+	    android:layout_weight="0.6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	     android:paddingRight="5dp"
+	    
+	    >
+	            <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	              android:background="#FFFFFF"
+	             
+	               >
+	               <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="190dp">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/select_report_prjname"
+	               android:textSize="12dp"
+	            	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               android:onClick="projectNameClick"
+	               android:textColor="#000000"
+	               />
+	               
+	              </RelativeLayout>
+	              <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	               		 android:onClick="projectNameClick"
+	         
+	                   android:background="@drawable/arrowleft"
+	                  />
+	           </LinearLayout>   
+	         
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	                 android:background="#FFFFFF"
+	               android:orientation="horizontal"
+	               android:layout_marginTop="1dp"
+	               >
+	                <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="190dp">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/select_report_buildingname"
+	               android:textSize="12dp"
+	             	android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               android:onClick="buildingNameClick"
+	               android:textColor="#000000"
+	               />
+	               
+	               </RelativeLayout>
+	               <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	                   android:background="@drawable/arrowleft"
+	                   android:onClick="buildingNameClick"
+	                   />
+	           </LinearLayout>
+	            <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	                 android:background="#FFFFFF"
+	                 android:layout_marginTop="1dp"
+	               >
+	                  <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="190dp">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/select_report_snagtype"
+	               android:textSize="12dp"
+	               android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               android:onClick="snagTypeClick"
+	               android:textColor="#000000"
+	               />
+	               
+	               </RelativeLayout>
+	               <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	                 	android:background="@drawable/arrowleft"
+	                    android:onClick="snagTypeClick"
+	                 />
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	                 android:background="#FFFFFF"
+	                 android:layout_marginTop="1dp"
+	                 
+	               >
+	                 <RelativeLayout android:layout_height="match_parent"
+	                   android:layout_width="190dp">
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="190dp"
+	               android:id="@+id/select_report_snagStatus"
+	               android:textSize="12dp"
+	               android:background="@drawable/trans"
+	               android:editable="false"
+	               android:focusable="false"
+	               android:onClick="snagStatusClick"
+	               android:textColor="#000000"
+	               />
+	               
+	               </RelativeLayout>
+	               <Button 
+	                   android:layout_height="40dp"
+	                   android:layout_width="40dp"
+	                   android:textColor="#ff0000"
+	                 
+	                    android:onClick="snagStatusClick"
+	                   android:background="@drawable/arrowleft"/>
+	           </LinearLayout>
+	           
+	           
+	          
+	           <LinearLayout 
+	               android:layout_width="fill_parent"
+	               android:layout_height="40dp"
+	               android:orientation="horizontal"
+	               android:layout_marginTop="3dp"
+	               >
+	                 <RelativeLayout android:layout_width="190dp"
+	                     android:layout_height="40dp" >
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Submit"
+	               android:onClick="SubmitClick"
+	               android:layout_alignParentLeft="true"
+	               />
+	               <Button 
+	               android:layout_height="40dp"
+	               android:layout_width="90dp"
+	               android:text="Cancel"
+	               android:onClick="CancelClick"
+	               android:layout_alignParentRight="true"
+	               />
+	               </RelativeLayout>
+	           </LinearLayout>
+	           
+	           
+	           
+	     </LinearLayout>
+	    
+	    
+	    
+	    
+	
+	
+	    
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/back_bottom"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout> -->

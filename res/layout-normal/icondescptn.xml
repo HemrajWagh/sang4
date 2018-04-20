@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="#c5d0d2"
+     >
+     <ScrollView android:layout_width="fill_parent"
+         android:layout_marginTop="5dp"
+         android:layout_height="fill_parent"
+         android:fillViewport="true"
+         android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp">
+    <LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout android:layout_width="fill_parent"
+        android:orientation="horizontal"
+         android:background="@drawable/back_cell_header"
+       android:layout_height="50dp" >
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icondescHdngtxt"
+            android:paddingLeft="5dp"
+            android:text="@string/strIconDesTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:gravity="left|center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+          android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/wrnng"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_height="match_parent"
+            android:text="@string/strSngIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/inspct"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strInspIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/pendingnew"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strPendSngIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/resolvednew"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strResvSngIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/inspectedunresolved"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strReInspngIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <!-- 
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/star_blue"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strEntryInsIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/star_green"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strEntryModIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/count_blue"/>
+        </LinearLayout>
+        
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strInsCountIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_cell_defect2"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/count_green"/>
+        </LinearLayout>
+        
+        <TextView android:layout_width="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:text="@string/strModCountIcDesc"
+            android:paddingLeft="4dp"
+            android:textSize="16dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout> -->
+    
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

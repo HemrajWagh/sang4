@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ctc="http://schemas.android.com/apk/res/com.snagreporter"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/plot_image_layout"
+    >
+    <!-- <RelativeLayout 
+        android:id="@+id/plot_image_layout"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    > -->
+    <com.snagreporter.SnagImageMap
+	    android:id="@+id/map"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:src="@drawable/floor_plan1"
+    	/>
+     
+    <!-- </RelativeLayout> -->
+</RelativeLayout>

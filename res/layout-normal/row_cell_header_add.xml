@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/back_cell_header"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="7dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:id="@+id/row_cell_header_addtext"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        />
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="53dp"
+        android:layout_marginLeft="2dp"
+        android:text="Add new Apartment"
+        android:textColor="#ffffff"
+        android:textSize="8dp"
+         android:id="@+id/row_cell_header_addtext2"
+        />
+    <ImageButton 
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/row_cell_header_addbtn"
+        android:background="@drawable/add"
+        android:onClick="AddDefectClick"
+        android:visibility="gone"
+        />
+    
+    
+</LinearLayout>
